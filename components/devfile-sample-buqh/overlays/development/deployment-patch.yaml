@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-buqh
+  namespace: e2e-demos-wfdt-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:e6cd1374878e8292c64363d4a4fdf0103c66219305a1b733fe3ce6fc995d7840
+        name: my-nodejs
+        resources: {}
+status: {}
